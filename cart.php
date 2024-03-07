@@ -68,9 +68,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 
 
-
-
-
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center border rounded bg-light my-5">
@@ -119,13 +116,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             }            
             ?>
             <tr>
-            <a href="product.php"> <input type="submit" value="Add more Product" style="background-color:#fbb534;"></a>
+            <a href="products.php"> <input type="submit" value="Add more Product" style="background-color:#76453B;"></a>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="col-lg-3">
-        <form method="post" onsubmit="return BuyProductValidate()">
+        <!-- <form method="post" onsubmit="return BuyProductValidate()"> -->
+        <form method="post" action="validate.php">
           <div class="border bg-light rounded p-4">
             <h4>Grand Total: </h4>
             <input type="text" name="total" id="gtotal" readonly>
@@ -133,19 +131,19 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <br>
             <div class="form-group">
               <label>Full Name</label>
-              <input type="text" name="fullname" id="fname" class="form-control" onkeyup="return BuyProductValidate()"><span id="fspan"></span>
+              <input type="text" name="fullname" id="fname" class="form-control" onkeyup="return BuyProductValidate() " required><span id="fspan"></span>
             </div>
             <div class="form-group">
               <label>Phone Number</label>
-              <input type="number" name="phone_no" id="pnumber" class="form-control" onkeyup="return BuyProductValidate()"><span id="pspan"></span>
+              <input type="number" name="phone_no" id="pnumber" class="form-control" onkeyup="return BuyProductValidate()"required><span id="pspan"></span>
             </div>
             <div class="form-group">
               <label>Shipping Address</label>
-              <input type="text" name="address" id="addre" class="form-control" onkeyup="return BuyProductValidate()"><span id="aspan"></span>
+              <input type="text" name="address" id="addre" class="form-control" onkeyup="return BuyProductValidate()" required><span id="aspan"></span>
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="text" name="email" id="mail" class="form-control" onkeyup="return BuyProductValidate()"><span id="espan"></span>
+              <input type="text" name="email" id="mail" class="form-control" onkeyup="return BuyProductValidate()" required><span id="espan"></span>
             </div>
             <?php
             if (isset($_SESSION['cart'])) {
@@ -168,9 +166,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
              <!-- <input type="checkbox" name="cash" value="Cash On Delivery">
              <label> Cash on delievery</label> -->
             <br>
-            <input type="button" id="payment-button" name="cash" value="Pay with Khalti">
+            <input type="submit" id="payment-buttonn" name="cash" value="Pay with Khalti">
             <br>
-            <input type="submit" name="submit" style="visibility:hidden;" id="submitBtn" onsubmit="return BuyProductValidate()">
+            <!-- <input type="submit" name="submit" style="visibility:hidden;" id="submitBtn" onsubmit="return BuyProductValidate()"> -->
         </form>
       </div>
     </div>
@@ -201,7 +199,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
 </head>
 <body>
-    <!-- Place this where you need payment button -->
     <!-- Place this where you need payment button -->
     <!-- Paste this code anywhere in you body tag -->
     <script>
@@ -247,6 +244,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     ...
 </body>
 </html>
+
 
 
 </body>
