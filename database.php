@@ -1,6 +1,6 @@
 
 <?php 
-	$db = mysqli_connect('localhost', 'root', '', 'mis_project');
+	$db = mysqli_connect('localhost', 'root', '', 'gold-palace');
 
     
     

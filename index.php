@@ -5,7 +5,7 @@
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
+  <!-- Mobile Metas  -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <meta name="keywords" content="" />
@@ -443,16 +443,16 @@
             </h5>
           </div>
           <div class="social_box">
-            <a href="">
+            <a href="https://www.facebook.com/">
               <img src="images/fb.png" alt="">
             </a>
-            <a href="">
+            <a href="https://twitter.com/">
               <img src="images/twitter.png" alt="">
             </a>
-            <a href="">
+            <a href="https://linkedin.com/">
               <img src="images/linkedin.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/" >
               <img src="images/insta.png" alt="">
             </a>
           </div>

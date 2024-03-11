@@ -2,7 +2,7 @@
   $host = "localhost";
   $username = "root";
   $password = "";
-  $dbName = "mis_project";
+  $dbName = "gold-palace";
   $conn = mysqli_connect($host,$username,$password,$dbName);
 
   if(!$conn){
