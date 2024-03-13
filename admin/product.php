@@ -4,7 +4,7 @@ include('../connect.php');
 $path=__DIR__;
 if(isset($_POST['submit'])){
 move_uploaded_file($_FILES["photo"]["tmp_name"],$path."/product_images"."/".$_FILES["photo"]["name"]);
-$photo='/MIS Project/admin/product_images/'.$_FILES["photo"]["name"];
+$photo='/GoldPalace/admin/product_images/'.$_FILES["photo"]["name"];
 $product=$_POST["product"];
 $price=$_POST["price"];
 $Quantity=$_POST["amount"];

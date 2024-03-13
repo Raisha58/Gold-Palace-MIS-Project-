@@ -4,7 +4,7 @@ include('../connect.php');
 $path=__DIR__;
 if(isset($_POST['submit'])){
 move_uploaded_file($_FILES["photo"]["tmp_name"],$path."/category_images"."/".$_FILES["photo"]["name"]);
-$photo='/MIS Project/admin/category_images/'.$_FILES["photo"]["name"];
+$photo='/GoldPalace/admin/category_images/'.$_FILES["photo"]["name"];
 $product=$_POST["product"];
 $insert="INSERT INTO category(categoryname,photo) values('$product','$photo') ";
 mysqli_query($conn,$insert);
