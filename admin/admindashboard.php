@@ -16,15 +16,18 @@ $data=mysqli_query($conn,"SELECT *from student");
             width: 600px;
             transform: translateX(400px);
         }
+        h2{
+            font-size: 2.5em
+        }
     </style>
 </head>
 <body>
 <div class="main-content">
         <header>
             <h2>
-                <label for="">
+                <!-- <label for="">
                     <span class="las la-bars"></span>
-                </label>
+                </label> -->
                 Admin Dashboard:
             </h2>
         </header>
@@ -38,9 +41,9 @@ foreach($data as $value){
 }
 
 ?>
-            <h2 style="text-align:center; font-size:50px;">
+            <h3 style="text-align:center; font-size:50px;">
 Total number of Customer:
-            </h2>
-            <h2 style="text-align:center;font-size:50px;"><?php  echo $count ?></h2></div>
+            </h3>
+            <h3 style="text-align:center;font-size:50px;"><?php  echo $count ?></h3></div>
 </body>
 </html>

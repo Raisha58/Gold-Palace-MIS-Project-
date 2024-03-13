@@ -30,7 +30,7 @@ foreach($data as $value){?>
 <tr><h3>Available Quantity:<?php echo $value["quantity"]  ?> </h3></tr>
 <tr><h3>Unit:<?php echo $value["unit"]  ?> </h3></tr>
 <tr><h3> Discount:<?php echo $value["discount"]  ?> </h3></tr>
-<!-- <tr><h3> Size:<?php echo $value["size"]  ?> </h3></tr> -->
+<!-- <tr><h3> Size:?php echo $value["size"]  ?> </h3></tr> -->
 <tr><h3> Date:<?php echo $value["enterdate"]  ?> </h3></tr>
 
 <form method="post" action="manage_cart.php"> 

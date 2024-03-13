@@ -13,7 +13,7 @@ $discount=$_POST["discount"];
 // $size=$_POST["size"];
 $category=$_POST["category"];
 $unit=$_POST["unit"];
-$insert="INSERT INTO products(product, discount,size, quantity,enterdate,price,photo,category,unit) values('$product','$discount','$size','$Quantity','$date','$price','$photo','$category','$unit') ";
+$insert="INSERT INTO products(product, discount, quantity,enterdate,price,photo,category,unit) values('$product','$discount','$Quantity','$date','$price','$photo','$category','$unit') ";
 mysqli_query($conn,$insert);
 }
 $data_product="SELECT * from products";
@@ -115,7 +115,7 @@ foreach($data as $value){
         	<td id= "tbl_title"><b><h3><?php print_r( $value['quantity']); ?></h3><b> </td>
 			<td id= "tbl_title"><b><h3><?php print_r( $value['unit']); ?></h3><b> </td>
 		<td id="tbl_firstaids"><b><h3><?php print_r($value['discount']); ?></h3></b></td>
-		<!-- <td id="tbl_firstaids"><b><h3><?php print_r($value['size']); ?></h3></b></td> -->
+		<!-- <td id="tbl_firstaids"><b><h3>?php print_r($value['size']); ?></h3></b></td> -->
 		<td id="tbl_firstaids"><b><h3><?php print_r($value['category']); ?></h3></b></td>
         <td id= "tbl_title"><b><h3><?php print_r( $value['enterdate']); ?></h3><b> </td>
 	<td><form method="POST" action="deleteproduct.php"><input type ="hidden" name="id" value=" <?php echo $value["id"]  ?>"><input type="Submit" name="delete_btn" value= "Delete" class="btn_remove"></form>

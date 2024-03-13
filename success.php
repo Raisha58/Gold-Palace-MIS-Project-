@@ -42,7 +42,7 @@
                         margin-bottom: 20px;
                         }
                 </style>
-                <?php
+                ?php
                 $transaction_id = $_GET['transaction_id'];
                 $total_amount = $_GET['total_amount'];
                 $transaction_date =  $_GET['transaction_date'];
@@ -51,8 +51,8 @@
                 ?>
                         <div class="success-container">
                                 <h1>Payment Successful!</h1>
-                                <p>Transaction ID : <b><?php echo $transaction_id; ?></b></p></br>
-                                <p>Amount: <b><?php echo $total_amount ?> </b></p>  </br>
+                                <p>Transaction ID : <b>?php echo $transaction_id; ?></b></p></br>
+                                <p>Amount: <b>?php echo $total_amount ?> </b></p>  </br>
                                 <a href="index.php">Okay</a>
                         </div>
         </body>
