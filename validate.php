@@ -16,8 +16,8 @@ CURLOPT_FOLLOWLOCATION => true,
 CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 CURLOPT_CUSTOMREQUEST => 'POST',
 CURLOPT_POSTFIELDS =>'{
-"return_url": "http://localhost/Gold-Palace-MIS-Project/success.php",
-"website_url": "https://example.com/",
+"return_url": "http://localhost/GoldPalace/success.php",
+"website_url": "https://127.0.0.1/",
 "amount": "' . $paisa . '",
 "purchase_order_id": "Order01",
     "purchase_order_name": "test",
@@ -34,6 +34,10 @@ CURLOPT_HTTPHEADER => array(
     'Authorization: key live_secret_key_68791341fdd94846a146f0457ff7b455',
     'Content-Type: application/json',
 ),
+// CURLOPT_HTTPHEADER => array(
+//     'Authorization: key test_secret_key_f3ca4a7f4cef4fa69748bc0a8061b4a7',
+//     'Content-Type: application/json',
+// ),
 
 ));
 

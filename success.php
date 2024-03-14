@@ -138,9 +138,9 @@
 
                 ?>
     <div class="container">
-      <div class="logo">
+      <!-- <div class="logo">
         <img src="images/success.png" alt="Logo" />
-      </div>
+      </div> -->
       <div class="message">Your transaction has been completed.</div>
       <div class="details">
         <div class="detail">
